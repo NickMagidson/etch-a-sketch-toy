@@ -15,3 +15,15 @@ function makeRows(rows, cols) {
   
 
 makeRows(16, 16);
+
+
+
+// Hover to change colors
+
+// Make var via class .grid-item
+
+let div = document.querySelector('.grid-item');
+
+// div.forEach(addEventerListenter('mouseover', function() {
+//      div.style.color = 'black'    
+// })
