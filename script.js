@@ -27,3 +27,18 @@ function makeRows(rows, cols) {
 makeRows(16, 16);
 
 
+function removeAllChildNodes(parent){
+    while(parent.firstChild){
+        parent.removeChild(parent.firstChild);
+    }
+}
+
+
+const reset = document.querySelector('#reset');
+reset.addEventListener('click', function() {
+    
+    removeAllChildNodes(container);
+    
+    makeRows(16, 16);
+    
+});
