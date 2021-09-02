@@ -13,10 +13,20 @@
 </head>
 <body>
     <h1>Etch-a-Sketch Toy</h1>
-    <div>
-    <button id="reset">Reset</button>
+
+    <div class="btns">
+        <div>
+        <button id="reset">Reset</button>
+        </div>
+
+        <div class="sliderAndValue">
+            <input type="range" min="2" max="100" value="16" id="slider">
+            <p class="value">16</p>
+        </div>
     </div>
 
     <div id="container" class="grid-size"></div>
+
+    
 </body>
 </html>

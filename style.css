@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 2px;
 }
 
 /* @font-face {
@@ -21,6 +21,15 @@ h1 {
   text-align: center;
   font-size: 60px;
 }
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+  height: 50px;
+  justify-content: space-evenly;
+}
+
 
 
 :root {
@@ -35,7 +44,7 @@ h1 {
   border: 1px solid black;
   border-radius: 5px;
   box-shadow: 10px 10px;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 
@@ -46,6 +55,35 @@ h1 {
   margin: none;
 }
 
+/* #slider{
+  -webkit-appearance: none;
+  background: black;
+  outline: none;
+  border-radius: 50px;
+} */
 
 
+.sliderAndValue{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+}
 
+.value{
+  font-size: 30px;
+  padding-left: 10px;
+  color: black;
+  text-shadow: 2px 2px white;
+
+}
+
+button{
+  width: 80px;
+  font-size: 20px;
+  background-color: white;
+  box-shadow: 5px 5px;
+  outline: none;
+  margin-top: 5px;
+  margin-left: 25px;
+}
