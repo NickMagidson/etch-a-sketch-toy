@@ -35,3 +35,7 @@ reset.addEventListener('click', function() {
     removeAllChildNodes(container);
     makeRows(16, 16);
 });
+
+
+
+
