@@ -34,10 +34,20 @@ const reset = document.querySelector('#reset');
 reset.addEventListener('click', function() {
     removeAllChildNodes(container);
     makeRows(16, 16);
-    slider = screenVal;
 });
 
 
+// Big and Small buttons
+const big = document.querySelector('#big');
+const small = document.querySelector('#small');
 
+big.addEventListener('click', function() {
+    removeAllChildNodes(container);
+    makeRows(64, 64);
+})
 
+small.addEventListener('click', function() {
+    removeAllChildNodes(container);
+    makeRows(16, 16);
+})
 
