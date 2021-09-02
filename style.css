@@ -87,3 +87,7 @@ button{
   margin-top: 5px;
   margin-left: 25px;
 }
+
+#reset {
+  padding: 7px;
+}
