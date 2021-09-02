@@ -34,7 +34,9 @@ const reset = document.querySelector('#reset');
 reset.addEventListener('click', function() {
     removeAllChildNodes(container);
     makeRows(16, 16);
+    slider = screenVal;
 });
+
 
 
 
