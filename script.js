@@ -15,7 +15,7 @@ function makeRows(rows, cols) {
         let rcolor = '#' + Math.floor(Math.random() * 16777215).toString(16);
         cell.style.backgroundColor = rcolor;
       });
-      container.appendChild(cell).className = "grid-item";
+    container.appendChild(cell).className = "grid-item";
   };
 };
 
@@ -37,7 +37,8 @@ reset.addEventListener('click', function() {
 });
 
 
-// Button to change size
+
+// Function to change grid size
 const change = document.querySelector('#change');
 
 function changeSize() {
@@ -52,7 +53,7 @@ function changeSize() {
     }
   }
 
-
+// Button to change grid size
   change.addEventListener('click', function() {
     changeSize();
   });
