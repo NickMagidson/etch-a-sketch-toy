@@ -9,13 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 2px;
 }
-
-/* @font-face {
-    font-family: myFirstFont;
-    src: url('/home/nick/Fonts/OriginTech personal use.ttf');
-} */
 
 h1 {
   text-align: center;
@@ -29,7 +23,6 @@ h1 {
   height: 50px;
   justify-content: space-evenly;
 }
-
 
 
 :root {
@@ -56,6 +49,8 @@ h1 {
   margin: none;
   display: inline-block;
   box-sizing: border-box;
+  max-width: 35px;
+  max-height: 35px;
 }
 
 
@@ -79,7 +74,3 @@ button{
 #reset {
   padding: 7px;
 }
-
-/* #change {
-
-} */

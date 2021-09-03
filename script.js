@@ -56,4 +56,6 @@ function changeSize() {
 // Button to change grid size
   change.addEventListener('click', function() {
     changeSize();
+    // gridItem = document.getElementsByClassName('grid-item');
+    // gridItem.style.
   });
