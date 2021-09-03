@@ -37,17 +37,22 @@ reset.addEventListener('click', function() {
 });
 
 
-// Big and Small buttons
-const big = document.querySelector('#big');
-const small = document.querySelector('#small');
+// Button to change size
+const change = document.querySelector('#change');
 
-big.addEventListener('click', function() {
-    removeAllChildNodes(container);
-    makeRows(64, 64);
-})
+function changeSize() {
+    let newSize = prompt("Enter desired grid size from 1 to 100");
+    let desiredValue = parseInt(newSize);
+    if (desiredValue > 1 && desiredValue <= 100) {
+      size = newSize;
+      removeAllChildNodes(container);
+      makeRows(desiredValue, desiredValue);
+    } else {
+      alert("Enter a digit from 1-100 range!");
+    }
+  }
 
-small.addEventListener('click', function() {
-    removeAllChildNodes(container);
-    makeRows(16, 16);
-})
 
+  change.addEventListener('click', function() {
+    changeSize();
+  });
