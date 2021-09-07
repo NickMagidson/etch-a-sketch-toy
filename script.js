@@ -48,14 +48,14 @@ function changeSize() {
       size = newSize;
       removeAllChildNodes(container);
       makeRows(desiredValue, desiredValue);
-      let gridCell = document.querySelectorAll(".grid-item");
-      Object.assign(gridCell.style, {
-        height : `${(size / desiredValue) - 2}px`,
-        width : `${(size / desiredValue) - 2}px`
-      });
     } else {
       alert("Enter a digit from 1-100 range!");
     }
+    // let gridCell = document.querySelectorAll(".grid-item");
+    // Object.assign(gridCell.style, {
+    //   height : `${(size / desiredValue) - 2}px`,
+    //   width : `${(size / desiredValue) - 2}px`
+    // });
   }
 
 // Button to change grid size
