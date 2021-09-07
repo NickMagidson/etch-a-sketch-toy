@@ -45,9 +45,13 @@ function changeSize() {
     let newSize = prompt("Enter desired grid size from 1 to 100");
     let desiredValue = parseInt(newSize);
     if (desiredValue > 1 && desiredValue <= 100) {
-      size = newSize;
+      let size = newSize;
       removeAllChildNodes(container);
       makeRows(desiredValue, desiredValue);
+    //   let gridItem = document.querySelectorAll('.grid-item');
+    //   gridItem.style.height = `${(gridItem / desiredValue) - 2}px`;
+    //   gridItem.style.width = `${(gridItem / desiredValue) - 2}px`;
+
     } else {
       alert("Enter a digit from 1-100 range!");
     }
@@ -61,6 +65,6 @@ function changeSize() {
 // Button to change grid size
   change.addEventListener('click', function() {
     changeSize();
-    // gridItem = document.getElementsByClassName('grid-item');
+    // let gridItem = document.getElementsByClassName('grid-item');
     // gridItem.style.
   });
