@@ -48,6 +48,11 @@ function changeSize() {
       size = newSize;
       removeAllChildNodes(container);
       makeRows(desiredValue, desiredValue);
+      let gridCell = document.querySelector(".grid-item");
+      Object.assign(gridCell.style, {
+        height : `${(size / desiredValue) - 2}px`,
+        width : `${(size / desiredValue) - 2}px`
+      });
     } else {
       alert("Enter a digit from 1-100 range!");
     }
@@ -56,6 +61,11 @@ function changeSize() {
 // Button to change grid size
   change.addEventListener('click', function() {
     changeSize();
+    let gridCell = document.createElement("div");
+    Object.assign(gridCell.style, {
+      height : `${(size / 16) - 2}px`,
+      width : `${(size / 16) - 2}px`
+    });
     // gridItem = document.getElementsByClassName('grid-item');
     // gridItem.style.
   });

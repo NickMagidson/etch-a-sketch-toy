@@ -39,6 +39,8 @@ h1 {
   border-radius: 5px;
   box-shadow: 10px 10px;
   margin-top: 25px;
+  max-height: 546px;
+  max-width: 546px;
 }
 
 
