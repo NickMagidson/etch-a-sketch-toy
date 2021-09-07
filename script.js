@@ -48,7 +48,7 @@ function changeSize() {
       size = newSize;
       removeAllChildNodes(container);
       makeRows(desiredValue, desiredValue);
-      let gridCell = document.querySelector(".grid-item");
+      let gridCell = document.querySelectorAll(".grid-item");
       Object.assign(gridCell.style, {
         height : `${(size / desiredValue) - 2}px`,
         width : `${(size / desiredValue) - 2}px`
@@ -61,11 +61,6 @@ function changeSize() {
 // Button to change grid size
   change.addEventListener('click', function() {
     changeSize();
-    let gridCell = document.createElement("div");
-    Object.assign(gridCell.style, {
-      height : `${(size / 16) - 2}px`,
-      width : `${(size / 16) - 2}px`
-    });
     // gridItem = document.getElementsByClassName('grid-item');
     // gridItem.style.
   });

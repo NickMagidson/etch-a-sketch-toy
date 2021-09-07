@@ -41,6 +41,8 @@ h1 {
   margin-top: 25px;
   max-height: 546px;
   max-width: 546px;
+  overflow:hidden;
+  
 }
 
 
